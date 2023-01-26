@@ -1,18 +1,12 @@
 # Markdown Demo
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 --- ---
 
 ## External 1.1
 
 Content 1.1
 
-<aside class="notes">
-This will only appear in the speaker notes window.
-</aside>
+Note: This will only appear in the speaker notes window.
 
 --- ---
 
@@ -20,19 +14,11 @@ This will only appear in the speaker notes window.
 
 Content 1.2
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 --- ---
 
 ## External 2
 
 Content 2.1
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
 
 --- ---
 
@@ -40,19 +26,11 @@ Shhh, these are your private notes 📝
 
 Content 3.1
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 ----
 
 ## External 3.2
 
 Content 3.2
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
 
 ----
 
@@ -60,19 +38,11 @@ Shhh, these are your private notes 📝
 
 ![External Image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 ----
 
 ## External 3.4 (Math)
 
 `\[ J(\theta_0,\theta_1) = \sum_{i=0} \]`
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
 
 ----
 
@@ -81,18 +51,10 @@ Shhh, these are your private notes 📝
 - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
 - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 ----
 
 <!-- .slide: data-background="#000000" -->
 ## Slide attributes
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
 
 --- ---
 
@@ -106,10 +68,6 @@ B
 
 C
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 --- ---
 
 
@@ -121,17 +79,9 @@ Shhh, these are your private notes 📝
 \dot{z} &amp; = -\beta z + xy
 \end{aligned} \]`
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
 --- ---
 
 ![Sample image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
 
 --- ---
 
@@ -144,7 +94,3 @@ public function foo()
     )
 }
 ```
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
