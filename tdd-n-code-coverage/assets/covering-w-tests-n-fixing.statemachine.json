@@ -1,0 +1,56 @@
+{
+    "id": "TEST COVERAGE REFACTORING",
+    "initial": "Current application state",
+    "states": {
+      "Current application state": {
+        "on": {
+          "Update implementation": {
+            "target": "Updated application"
+          }
+        }
+      },
+      "Updated application": {
+        "on": {
+          "Cover with tests": {
+            "target": "#TEST COVERAGE REFACTORING.Fixing.Broken update"
+          }
+        }
+      },
+      "Fixing": {
+        "initial": "Broken update",
+        "states": {
+          "Broken update": {
+            "on": {
+              "Updating app": {
+                "target": "are test working?"
+              }
+            }
+          },
+          "are test working?": {
+            "on": {
+              "Fix tests": {
+                "target": "is app working?"
+              }
+            }
+          },
+          "is app working?": {
+            "on": {
+              "Fix app": {
+                "target": "are test working?"
+              },
+              "Add update to release": {
+                "target": "#TEST COVERAGE REFACTORING.Release candidate"
+              }
+            }
+          }
+        }
+      },
+      "Release candidate": {
+        "on": {
+          "Release": {
+            "target": "Current application state"
+          }
+        }
+      }
+    }
+  }

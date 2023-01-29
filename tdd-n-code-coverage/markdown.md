@@ -1,103 +1,18 @@
-# Code Coverage <br> & TDD
-
-Note:
-Згадка про перший K.S.
-
-Запит на покриття тестами та TDD на практиці
+## References
 
 --- ---
 
-## External 1.1
+### Why "Don't write tests"?
 
-Content 1.1
-
-Note: This will only appear in the speaker notes window. 2
-
---- ---
-
-## External 1.2
-
-Content 1.2
-
-Note: This will only appear in the speaker notes window. 3
+* https://dev.to/kais_blog/5-reasons-why-you-should-never-ever-write-tests-3ebf
+* https://levelup.gitconnected.com/we-didnt-write-tests-because-we-wanted-to-get-our-code-out-faster-2f9de49a52d7
+* https://betterprogramming.pub/why-dont-we-do-unit-testing-e0bb55a38aa2
+* https://matthiasnoback.nl/2019/09/is-not-writing-tests-unprofessional/
 
 --- ---
 
-## External 2
+### More references:
 
-Content 2.1
-
---- ---
-
-## External 3.1
-
-Content 3.1
-
-----
-
-## External 3.2
-
-Content 3.2
-
-----
-
-## External 3.3 (Image)
-
-![External Image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
-
-----
-
-## External 3.4 (Math)
-
-`\[ J(\theta_0,\theta_1) = \sum_{i=0} \]`
-
-----
-
-## Element 3.5 attributes
-
-- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-
-----
-
-<!-- .slide: data-background="#000000" -->
-## Slide attributes
-
---- ---
-
-A
-
----
-
-B
-
----
-
-C
-
---- ---
-
-
-## The Lorenz Equations
-
-`\[\begin{aligned}
-\dot{x} &amp; = \sigma(y-x) \\
-\dot{y} &amp; = \rho x - y - xz \\
-\dot{z} &amp; = -\beta z + xy
-\end{aligned} \]`
-
---- ---
-
-![Sample image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
-
---- ---
-
-
-```php [1|3-5]
-public function foo()
-{
-    $foo = array(
-        'bar' => 'bar'
-    )
-}
-```
+* https://kentcdodds.com/blog/common-testing-mistakes
+* https://kentcdodds.com/blog/how-to-know-what-to-test
+* https://www.artima.com/forums/flat.jsp?forum=106&thread=204677

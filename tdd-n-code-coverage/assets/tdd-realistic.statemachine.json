@@ -1,0 +1,58 @@
+{
+    "id": "TEST DRIVEN DEVELOPMENT | REALISTIC",
+    "initial": "Current application state",
+    "states": {
+      "Current application state": {
+        "on": {
+          "Update implementation": {
+            "target": "Updated application"
+          }
+        }
+      },
+      "Updated application": {
+        "on": {
+          "Put aside solution": {
+            "target": "Current application state \\w stashed changes"
+          }
+        }
+      },
+      "Release candidate": {
+        "on": {
+          "Release": {
+            "target": "Current application state"
+          }
+        }
+      },
+      "Current application state \\w stashed changes": {
+        "on": {
+          "Add +1 failed test": {
+            "target": "application state \\w failed tests"
+          }
+        }
+      },
+      "application state \\w failed tests": {
+        "on": {
+          "Resolved failed tests \\w refactroring": {
+            "target": "Slighly updated application"
+          }
+        }
+      },
+      "Slighly updated application": {
+        "on": {
+          "Peek into older implementation": {
+            "target": "If requirement met?"
+          }
+        }
+      },
+      "If requirement met?": {
+        "on": {
+          "Add +1 failed tests": {
+            "target": "application state \\w failed tests"
+          },
+          "Add update to release": {
+            "target": "Release candidate"
+          }
+        }
+      }
+    }
+  }

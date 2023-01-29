@@ -1,0 +1,41 @@
+{
+    "id": "TEST DRIVEN DEVELOPMENT",
+    "initial": "Current application state",
+    "states": {
+      "Current application state": {
+        "on": {
+          "Add tests": {
+            "target": "Current application \\w failed tests"
+          }
+        }
+      },
+      "Current application \\w failed tests": {
+        "on": {
+          "Make application update": {
+            "target": "Updated implementation"
+          }
+        }
+      },
+      "Release candidate": {
+        "on": {
+          "Release": {
+            "target": "Current application state"
+          }
+        }
+      },
+      "Updated implementation": {
+        "on": {
+          "Refactor solution": {
+            "target": "Updated readable implementation"
+          }
+        }
+      },
+      "Updated readable implementation": {
+        "on": {
+          "Add update to release": {
+            "target": "Release candidate"
+          }
+        }
+      }
+    }
+  }
