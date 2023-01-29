@@ -16,3 +16,4 @@
 * https://kentcdodds.com/blog/common-testing-mistakes
 * https://kentcdodds.com/blog/how-to-know-what-to-test
 * https://www.artima.com/forums/flat.jsp?forum=106&thread=204677
+* https://www.valentinog.com/blog/jest-coverage/
