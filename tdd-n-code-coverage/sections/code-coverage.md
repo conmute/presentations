@@ -19,7 +19,7 @@
 
 <div class="r-stack">
 
-![…](https://media4.giphy.com/media/l1KtYs7ZpeBskCQus/giphy.gif?cid=790b76111cfc59f7108721488c7c3aaf535e0ee677c623d2&rid=giphy.gif&ct=g) <!-- .element: class="fragment fade-in-then-out" -->
+![…](https://media.tenor.com/P3IhANYW7-0AAAAS/joker-dont-say-i-didnt-warn-you.gif) <!-- .element: class="fragment fade-in-then-out" style="width: 50vh" -->
 
 ```bash
 npm test -- --coverage
@@ -28,11 +28,17 @@ npm test -- --coverage
 
 ![…](https://www.valentinog.com/blog/static/5ee413ad9f33adcd6c830fe264583f92/715a3/jest-wrong-code-coverage.png) <!-- .element: class="fragment fade-in-then-out" -->
 
+![…](https://media.tenor.com/eeIyFJrl8vQAAAAS/thank-you-for-that-useless-information-mike-alexander.gif) <!-- .element: class="fragment fade-in-then-out" style="width: 50vh" -->
+
+![…](https://media.tenor.com/PAPiN-_vHWkAAAAS/baby-running.gif) <!-- .element: class="fragment fade-in-then-out" style="width: 50vh" -->
+
 </div>
 
 --- ---
 
 <div class="r-stack">
+
+![…](https://media.tenor.com/2jgbEi-vCuQAAAAS/mando-way-this-is-the-way.gif) <!-- .element: class="fragment fade-in-then-out" -->
 
 ```bash
 npm test -- --coverage --collectCoverageFrom="./src/**"

@@ -16,7 +16,7 @@
 
 --- ---
 
-<video src="/assets/tdd-realistic.mov" data-autoplay data-loop></video>
+<video src="/assets/tdd-realistic.mov" data-autoplay data-loop style="height: 60vh;"></video>
 
 --- ---
 
