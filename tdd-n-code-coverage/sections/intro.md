@@ -100,10 +100,10 @@ Note:
 
 --- ---
 
-### Вартість тестів протягом часу <!-- .element: class="fit-text" -->
-
-<img class="r-stretch" src="https://www.karllhughes.com/assets/img/cost-of-tests-over-time.png" alt="cost of tests over time" />
+### … і багато інший різних потреб
 
 --- ---
 
-### … і багато інший різних потреб
+### Вартість тестів протягом часу <!-- .element: class="fit-text" -->
+
+<img class="r-stretch" src="https://www.karllhughes.com/assets/img/cost-of-tests-over-time.png" alt="cost of tests over time" />

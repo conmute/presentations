@@ -17,3 +17,6 @@
 * https://kentcdodds.com/blog/how-to-know-what-to-test
 * https://www.artima.com/forums/flat.jsp?forum=106&thread=204677
 * https://www.valentinog.com/blog/jest-coverage/
+* https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400
+* https://martinfowler.com/bliki/TestCoverage.html
+* http://www.exampler.com/testing-com/writings/coverage.pdf

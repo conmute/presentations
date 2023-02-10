@@ -30,15 +30,13 @@ npm test -- --coverage
 
 ![…](https://media.tenor.com/eeIyFJrl8vQAAAAS/thank-you-for-that-useless-information-mike-alexander.gif) <!-- .element: class="fragment fade-in-then-out" style="width: 50vh" -->
 
-![…](https://media.tenor.com/PAPiN-_vHWkAAAAS/baby-running.gif) <!-- .element: class="fragment fade-in-then-out" style="width: 50vh" -->
-
 </div>
 
 --- ---
 
 <div class="r-stack">
 
-![…](https://media.tenor.com/2jgbEi-vCuQAAAAS/mando-way-this-is-the-way.gif) <!-- .element: class="fragment fade-in-then-out" -->
+![…](https://media.tenor.com/2jgbEi-vCuQAAAAS/mando-way-this-is-the-way.gif) <!-- .element: class="fragment fade-in-then-out" width="700"-->
 
 ```bash
 npm test -- --coverage --collectCoverageFrom="./src/**"
@@ -175,3 +173,17 @@ npm test -- --coverage --collectCoverageFrom="./src/**"
 ![…](https://media.tenor.com/0B3JysK_7r0AAAAC/turn-it-up-dj.gif) <!-- .element: class="fragment fade-in-then-out" width="500" -->
 
 </div>
+
+--- ---
+
+### Carefull…
+
+<div class="r-stack">
+
+>  If a part of your test suite is weak in a way that coverage can detect, it's likely also weak in a way coverage can't detect. <!-- .element: class="fragment fade-in-then-out" -->
+
+> I wouldn’t have written four coverage tools if I didn’t think they’re helpful. But they’re only helpful if they’re used to enhance thought, not replace it. <!-- .element: class="fragment fade-in-then-out" -->
+
+</div>
+
+[reference](http://www.exampler.com/testing-com/writings/coverage.pdf)
