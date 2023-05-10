@@ -277,6 +277,265 @@ However, as of AngularJS 1.8, the angular-scenario.js package has been removed f
 
 ----
 
+## What are these specificly?
+
+Lets review that are the old modules! 👨🏻‍💻
+
+----
+
+## `angular-animate`
+
+
+[ngAnimate module](https://docs.angularjs.org/api/ngAnimate)
+
+<aside class="notes">
+
+* `angular-animate`: This package provides support for animation features in AngularJS, including CSS-based transitions and animations.
+
+</aside>
+
+----
+
+## `angular-aria`
+
+[ngAria module](https://docs.angularjs.org/api/ngAria)
+
+<aside class="notes">
+
+* `angular-aria`: This package provides support for Accessible Rich Internet Applications (ARIA) in AngularJS, making it easier to build web applications that are accessible to users with disabilities.
+
+</aside>
+
+----
+
+## `angular-cookies`
+
+```javascript
+angular.module('cookiesExample', ['ngCookies'])
+.controller('ExampleController', ['$cookies', function($cookies) {
+  // Retrieving a cookie
+  var favoriteCookie = $cookies.get('myFavorite');
+  // Setting a cookie
+  $cookies.put('myFavorite', 'oatmeal');
+}]);
+```
+
+[ngCookies module](https://docs.angularjs.org/api/ngCookies)
+
+<aside class="notes">
+
+* `angular-cookies`: This package provides support for working with cookies in AngularJS, including the ability to read, write, and delete cookies.
+
+</aside>
+
+----
+
+## `angular-resource`
+
+```javascript
+app.factory('Notes', ['$resource', function($resource) {
+  return $resource('/notes/:id', {id: '@id'}, {
+    update: {method: 'PUT'}
+  });
+}]);
+```
+
+[ngResource module](https://docs.angularjs.org/api/ngResource)
+
+<aside class="notes">
+
+* `angular-resource`: This package provides support for working with RESTful web services in AngularJS, including the ability to make GET, POST, PUT, and DELETE requests.
+
+</aside>
+
+----
+
+## `angular-route`
+
+[ngRoute module](https://docs.angularjs.org/api/ngRoute)
+
+<aside class="notes">
+
+* `angular-route`: This package provides support for routing in AngularJS, allowing you to build single-page applications that have multiple views.
+
+</aside>
+
+----
+
+## `angular-sanitize`
+
+[ngSanitize module](https://docs.angularjs.org/api/ngSanitize)
+
+<aside class="notes">
+
+* `angular-sanitize`: This package provides support for sanitizing HTML inputs in AngularJS, helping to prevent security vulnerabilities such as cross-site scripting (XSS) attacks.
+
+</aside>
+
+----
+
+## `angular-message-format`
+
+```html [|5-10]
+<div ng-controller="AppController">
+    Select Recipient:<br>
+     <select ng-model="recipient" ng-options="person as person.name for person in recipients">
+         </select>
+     <p>{{recipient.gender, select,
+         male {{{recipient.name}} unwrapped his gift. }
+               female {{{recipient.name}} unwrapped her gift. }
+               other {{{recipient.name}} unwrapped their gift. }
+     }}</p>
+</div>
+```
+
+[ngMessageFormat module](https://docs.angularjs.org/api/ngMessageFormat)
+
+<aside class="notes">
+
+* `angular-message-format`: This package provides support for formatting messages in AngularJS, allowing you to build applications that can be easily translated into different languages.
+
+</aside>
+
+----
+
+## `angular-messages`
+
+[ngMessages module](https://docs.angularjs.org/api/ngMessages)
+
+```html [|5-10]
+<form name="myForm">
+  <label>
+    Enter text:
+    <input type="email" ng-model="field" name="myField" required maxlength="15" />
+  </label>
+  <div ng-messages="myForm.myField.$error" role="alert">
+    <div ng-message="required">Please enter a value for this field.</div>
+    <div ng-message="email">This field must be a valid email address.</div>
+    <div ng-message="maxlength">This field can be at most 15 characters long.</div>
+  </div>
+</form>
+```
+
+<aside class="notes">
+
+* `angular-messages`: This package provides support for displaying form validation error messages in AngularJS, making it easier to build forms that validate user input.
+
+</aside>
+
+----
+
+## `angular-parse-ext`
+
+[ngParseExt module](https://docs.angularjs.org/api/ngParseExt)
+
+Enables the<br />`<div ng-repeat="f in поля"></div>`
+
+<aside class="notes">
+
+* `angular-parse-ext`: This package provides support for parsing complex data structures in AngularJS, including the ability to parse dates, regular expressions, and more.
+
+</aside>
+
+----
+
+## `angular-touch`
+
+[ngTouch module](https://docs.angularjs.org/api/ngTouch)
+
+Note: It still provided though marked as deprecated, recomended [Hammer.js](https://hammerjs.github.io) instead… It is what it is.
+
+<aside class="notes">
+
+* `angular-touch`: This package provides support for touch-based interactions in AngularJS, making it easier to build web applications that work well on touch-enabled devices.
+
+</aside>
+
+----
+
+## `angular-i18n/en`
+
+Add some AngularJS supports `i18n`/`l10n` for `date`, `number` and `currency` filters.
+
+```javascript
+§provide. value ("$locale", {
+    "DATETIME_FORMATS": {..},
+    "NUMBER FORMATS": {..},
+    "id": "en"
+    "localeID": "en",
+    "pluralCat": () => …
+})
+```
+
+<aside class="notes">
+
+* `angular-i18n/en`: This package provides support for internationalization (i18n) in AngularJS, including translations for the English language.
+
+Overall, these packages provide a wide range of functionality to help developers build robust, feature-rich web applications with AngularJS.
+
+</aside>
+
+----
+
+## `angular-mocks`/`ngMock`
+
+[ngMock module](https://docs.angularjs.org/api/ngMock)
+
+Has different utils for writing tests, like [$exceptionHandler](https://docs.angularjs.org/api/ngMock/service/$exceptionHandler) or ability to make custom injections with [angular.mock.inject](https://docs.angularjs.org/api/ngMock/function/angular.mock.inject)
+
+
+----
+
+## `angular-mocks`/`ngMockE2E`
+
+```javascript
+var myAppDev = angular.module('myAppDev', [
+    'myApp', 'ngMockE2E'
+]);
+myAppDev.run(function($httpBackend) {
+  var phones = [{name: 'phone1'}, {name: 'phone2'}];
+
+  // returns the current list of phones
+  $httpBackend.whenGET('/phones')
+    .respond(phones);
+
+  // adds a new phone to the phones array
+  $httpBackend.whenPOST('/phones')
+    .respond(function(method, url, data) {
+        var phone = angular.fromJson(data);
+        phones.push(phone);
+        return [200, phone, {}];
+    });
+  // Requests for templates are handled by the real server
+  $httpBackend.whenGET(/^\/templates\//).passThrough(); 
+  //...
+});
+angular.element(function() {
+    angular.bootstrap(document, ['myApp']);
+});
+```
+
+----
+
+## `angular-scenario` (< v1.7)
+
+<aside class="notes">
+
+* `angular-scenario.js` was a package included in AngularJS versions up to 1.7. It provided a way to write end-to-end tests for AngularJS applications using a special testing framework called "Angular Scenario".
+
+The Angular Scenario framework allowed developers to write tests that simulated user interactions with the application, such as clicking buttons, filling out forms, and navigating to different views. The tests were written in a special syntax that was designed to be easy to read and write, even for developers who were not experienced with testing.
+
+However, as of AngularJS 1.8, the angular-scenario.js package has been removed from the framework. The Angular team recommends that developers use other testing frameworks, such as Protractor or Jest, to write end-to-end tests for their AngularJS applications. These frameworks offer more advanced features and better integration with modern development workflows.
+
+</aside>
+
+
+--- ---
+
 ## How it's tested?
 
 Let's review now! 👨🏻‍💻
+
+----
+
+TBD
