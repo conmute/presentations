@@ -227,3 +227,11 @@ Its like Serverless but with `strict` mode on…
 ### Hyped <create.t3.gg>
 
 <https://create.t3.gg/>
+
+--- ---
+
+### Nextjs App Router Playground
+
+<https://github.com/vercel/app-playground>
+
+…there is a LOT IN HERE!
