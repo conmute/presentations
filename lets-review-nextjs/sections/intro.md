@@ -1,4 +1,4 @@
-# How Next.js works?
+# Lets talk Next.js
 
 --- --- --- ---
 
@@ -112,6 +112,9 @@ Reminder, functions are NOT serializable
 
 * 🍔 server component if called in server <!-- .element: class="fragment" data-fragment-index="2" -->
 * 🪰 client component with dynamics if rehydrated on client side <!-- .element: class="fragment" data-fragment-index="3" -->
+
+![](./sections/assets/shared-components.png)
+<!-- .element: class="r-stretch" -->
 
 --- ---
 

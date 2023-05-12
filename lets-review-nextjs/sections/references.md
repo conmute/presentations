@@ -2,7 +2,7 @@
 
 --- ---
 
-* [Data Fetching with React Server Components](https://www.youtube.com/watch?v=TQQPAU21ZUw&t=117s)
+* [Data Fetching with React Server Components](https://www.youtube.com/watch?v=TQQPAU21ZUw)
 * <https://www.patterns.dev/posts/react-server-components>
 * <https://www.plasmic.app/blog/how-react-server-components-work>
 * <https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration#migrating-from-pages-to-app>
