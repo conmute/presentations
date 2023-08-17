@@ -1,4 +1,4 @@
-# Markdown Demo
+# TMUX essentials…
 
 <aside class="notes">
 Shhh, these are your private notes 📝
