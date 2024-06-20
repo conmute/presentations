@@ -4,7 +4,7 @@
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
+---
 
 ## External 1.1
 
@@ -14,7 +14,7 @@ Content 1.1
 This will only appear in the speaker notes window.
 </aside>
 
---- ---
+---
 
 ## External 1.2
 
@@ -24,7 +24,7 @@ Content 1.2
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
+---
 
 ## External 2
 
@@ -34,7 +34,7 @@ Content 2.1
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
+---
 
 ## External 3.1
 
@@ -44,7 +44,7 @@ Content 3.1
 Shhh, these are your private notes 📝
 </aside>
 
-----
+---
 
 ## External 3.2
 
@@ -54,7 +54,7 @@ Content 3.2
 Shhh, these are your private notes 📝
 </aside>
 
-----
+---
 
 ## External 3.3 (Image)
 
@@ -64,7 +64,7 @@ Shhh, these are your private notes 📝
 Shhh, these are your private notes 📝
 </aside>
 
-----
+---
 
 ## External 3.4 (Math)
 
@@ -74,7 +74,7 @@ Shhh, these are your private notes 📝
 Shhh, these are your private notes 📝
 </aside>
 
-----
+---
 
 ## Element 3.5 attributes
 
@@ -85,16 +85,17 @@ Shhh, these are your private notes 📝
 Shhh, these are your private notes 📝
 </aside>
 
-----
+---
 
 <!-- .slide: data-background="#000000" -->
+
 ## Slide attributes
 
 <aside class="notes">
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
+---
 
 A
 
@@ -110,8 +111,7 @@ C
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
-
+---
 
 ## The Lorenz Equations
 
@@ -125,7 +125,7 @@ Shhh, these are your private notes 📝
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
+---
 
 ![Sample image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
 
@@ -133,8 +133,7 @@ Shhh, these are your private notes 📝
 Shhh, these are your private notes 📝
 </aside>
 
---- ---
-
+---
 
 ```php [1|3-5]
 public function foo()
