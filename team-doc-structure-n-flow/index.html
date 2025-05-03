@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>reveal.js - Markdown Example</title>
+
+    <!-- get dependencies from here: https://cdnjs.com/libraries/reveal.js/5.1.0 -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css"
+      integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css"
+      integrity="sha512-0AUO8B5ll9y1ERV/55xq3HeccBGnvAJQsVGitNac/iQCLyDTGLUBMPqlupIWp/rJg0hV3WWHusXchEIdqFAv1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css"
+      integrity="sha512-B1sAcZ4KSpvbIUUvxaoqy56z88d6fozQyEV54K0gVBUMDMcVu9CAXMwJ5wTWo650j3IQH6yDEETiek6lrk/zCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/monokai.min.css"
+      integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Use external markdown resource, separate slides by two groups of three dashes; vertical slides by just one group with four dashes -->
+        <section
+          data-markdown="sections/1_the_problem.md"
+          data-separator="^\n===\n$"
+          data-separator-vertical="^\n---\n$"
+        ></section>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"
+      integrity="sha512-sMRSj1Ns64C2OE6VNS7WrV63OHW7dLAvi96CXRoy9AEe/tKF+868fhUJpc5ZKS166lwhe2ArCYjFitLJUY+VWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"
+      integrity="sha512-4exkEeyVuaWUFKozXl6L3UCugl6ai1cKnrVFkWUstdrNB2sDxxmPEaHBzTlYm9wX78EjPzEBG0s8k37oPeUFIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"
+      integrity="sha512-xkVKkN0o7xECTHSUZ9zdsBYRXiAKH7CZ3aICpW6aQJZsufVVRLhEBTDjTpC1tPzm+gNZiOeW174zXAB2fOLsTg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"
+      integrity="sha512-tDzEYXTFwGOO3tWp8oTV3yGeZ4lG4gUt+tJFQTsP7W4jV/MJ1Rgr6m9aICicjh/ymL5GD6jkHXDi9cHKfctFGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/math/math.min.js"
+      integrity="sha512-r8CLLeBm1OZX6ll1USdj99rqbY3Y9no8A1YUMy0l/kk+KFnlsQT5E/8gEs59Q7BRta0jBOZVwLqvmlWtdBzrXw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      let deck = new Reveal({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        showNotes: false, // "separate-page",
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath.KaTeX,
+        ],
+      });
+      deck.initialize();
+    </script>
+  </body>
+</html>
