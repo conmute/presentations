@@ -6,144 +6,128 @@ Shhh, these are your private notes 📝
 
 ===
 
-## External 1.1
+## Improve ur's Terminal Gene!
 
-Content 1.1
+![BLAME megastructure](https://c4.wallpaperflare.com/wallpaper/100/389/106/blame-manga-wallpaper-preview.jpg)
 
 <aside class="notes">
-This will only appear in the speaker notes window.
+    CLI is usually one of the things that we do very very often… We can use sessions, windows and even panes!
 </aside>
 
 ===
 
-## External 1.2
+## Quick DEMO!
 
-Content 1.2
+===
+
+## Installation
+
+```bash
+<pacman> install tmux
+brew install tmux
+```
 
 <aside class="notes">
-Shhh, these are your private notes 📝
+    This command will add the powerfull session management to your cli experience
 </aside>
 
 ===
 
-## External 2
+## Extending TMUX
 
-Content 2.1
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 <aside class="notes">
-Shhh, these are your private notes 📝
+    That is how we can add even more stuff to tmux!
 </aside>
 
 ===
 
-## External 3.1
+## Configuration
 
-Content 3.1
+```bash [1-2|4-7|9-13|15-19|21-22|24-28|30|32-38|40|42-43|45-49|51-54|56-57|60|61|62|63|64|65|67-68|70-71|74]
+set-option -sa terminal-overrides ",xterm*:Tc"
+set -g default-terminal "screen-256color"
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
+# readjust <lead> setup
+set -g prefix C-a
+unbind C-b
+bind-key C-a send-prefix
 
----
+# Start windows and panes at 1, not 0
+set -g base-index 1
+set -g pane-base-index 1
+set-window-option -g pane-base-index 1
+set-option -g renumber-windows on
 
-## External 3.2
+# rebind % and " to more meaningfull | and -
+unbind %
+unbind '"'
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
-Content 3.2
+unbind r
+bind r source-file ~/.tmux.conf
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
+# added vim navigation to resize pane!
+bind -r j resize-pane -D 5
+bind -r k resize-pane -U 5
+bind -r l resize-pane -R 5
+bind -r h resize-pane -L 5
 
----
+bind -r m resize-pane -Z
 
-## External 3.3 (Image)
+# Shift Alt vim keys to switch windows
+bind -n M-H previous-window
+bind -n M-L next-window
 
-![External Image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
+set -g mouse on
 
----
+# VI specific configuration
+set-window-option -g mode-keys vi
 
-## External 3.4 (Math)
+# keybindings
+bind-key -T copy-mode-vi v send-keys -X begin-selection # start selecting text with "v"
+bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
+bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel # copy text with "y"
+# bind-key -T copy-mode-vi 'y' send -X copy-selection # copy text with "y"
 
-`\[ J(\theta_0,\theta_1) = \sum_{i=0} \]`
+unbind -T copy-mode-vi MouseDragEnd1Pane # don't exit copy mode when dragging with mouse
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
+# remove delay for exiting insert mode with ESC in Neovim
+set -sg escape-time 10
 
----
+# tpm plugin
+set -g @plugin 'tmux-plugins/tpm'
 
-## Element 3.5 attributes
+# list of tmux plugins
+set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'jimeh/tmux-themepack'
+set -g @plugin 'tmux-plugins/tmux-resurrect' # persist tmux sessions after computer restart
+set -g @plugin 'tmux-plugins/tmux-continuum' # automatically saves sessions for you every 15 minutes
+set -g @plugin 'tmux-plugins/tmux-sensible'  # twicks to make tmux more sensible to all users
+set -g @plugin 'tmux-plugins/tmux-yank'
 
-- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+# theme
+set -g @themepack 'powerline/default/cyan'
 
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
+set -g @resurrect-capture-pane-contents 'on'
+set -g @continuum-restore 'on'
 
----
-
-<!-- .slide: data-background="#000000" -->
-
-## Slide attributes
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
-===
-
-A
-
----
-
-B
-
----
-
-C
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
-===
-
-## The Lorenz Equations
-
-`\[\begin{aligned}
-\dot{x} &amp; = \sigma(y-x) \\
-\dot{y} &amp; = \rho x - y - xz \\
-\dot{z} &amp; = -\beta z + xy
-\end{aligned} \]`
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
-===
-
-![Sample image](https://s3.amazonaws.com/static.slid.es/logo/v2/slides-symbol-512x512.png)
-
-<aside class="notes">
-Shhh, these are your private notes 📝
-</aside>
-
-===
-
-```php [1|3-5]
-public function foo()
-{
-    $foo = array(
-        'bar' => 'bar'
-    )
-}
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
 ```
 
 <aside class="notes">
 Shhh, these are your private notes 📝
 </aside>
+
+===
+
+## QA
